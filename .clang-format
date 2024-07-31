@@ -1,0 +1,33 @@
+---
+Language: Cpp
+# See `clang-format --style=llvm --dump-config` for default options
+BasedOnStyle: LLVM
+AlignAfterOpenBracket: AlwaysBreak
+AlignConsecutiveBitFields: Consecutive
+AlignConsecutiveMacros: Consecutive
+AllowShortCaseLabelsOnASingleLine: true
+AllowShortFunctionsOnASingleLine: Inline
+AlwaysBreakTemplateDeclarations: Yes
+BinPackArguments: false
+BinPackParameters: false
+BreakBeforeBinaryOperators: NonAssignment
+BreakConstructorInitializers: BeforeComma
+ColumnLimit: 100
+IncludeCategories:
+  - Regex: '^<'
+    Priority: 1
+IndentCaseLabels: true
+InsertNewlineAtEOF: true
+InsertTrailingCommas: Wrapped
+KeepEmptyLinesAtTheStartOfBlocks: false
+LineEnding: LF
+MacroBlockBegin: '^TL_[A-Z_]+_FUN(_(HEADER_REG|REG|EX))?$|^REGISTER_MODULE$|^STATSHOUSE_METRIC$'
+MacroBlockEnd: '^TL_[A-Z_]+_FUN_END$|^REGISTER_MODULE_END$|^STATSHOUSE_METRIC_END$'
+PackConstructorInitializers: NextLine
+PenaltyBreakBeforeFirstCallParameter: 1
+PenaltyReturnTypeOnItsOwnLine: 200
+PointerAlignment: Left
+QualifierAlignment: Left
+SeparateDefinitionBlocks: Always
+SpaceAfterTemplateKeyword: false
+...
